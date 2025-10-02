@@ -7,7 +7,7 @@
 
 **This is a story about finding information freedom in the face of harsh restrictions. GTunnel is an experimental web proxy project that uses a Large Language Model (Google Gemini) as an "information tunnel" to fetch the outside world's web pages for you from within a restricted network environment.**
 
-![](./GTunnel.jpg)
+<img src="./GTunnel.jpg" alt="Project Banner" style="border-radius: 10px; margin-top: 10px; margin-bottom: 10px;width: 300px; height: 300px;">
 
 ---
 

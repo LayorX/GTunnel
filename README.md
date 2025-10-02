@@ -7,7 +7,7 @@
 
 **這是一個關於在嚴苛限制中尋找資訊自由的故事。GTunnel 是一個實驗性的網頁代理專案，它利用大型語言模型 (Google Gemini) 作為「資訊隧道」，為您從受限的網路環境中擷取外部世界的網頁。**
 
-![](./GTunnel.jpg)
+<img src="./GTunnel.jpg" alt="Project Banner" style="border-radius: 10px; margin-top: 10px; margin-bottom: 10px;width: 300px; height: 300px;">
 
 ---
 
