@@ -1,5 +1,7 @@
 # GTunnel - 誕生於數位高牆裂縫中的資訊隧道
 
+[English Version](README.en.md)
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.md)
 
@@ -31,15 +33,15 @@ GTunnel 的運作方式與傳統代理完全不同：
 ```mermaid
 graph TD
     subgraph "A) 本地端 (User's Machine)"
-        A1[使用者瀏覽器] -- 1. 輸入 URL --> A2[本地 Flask 代理 App];
+        A1["使用者瀏覽器"] -- 1. 輸入 URL --> A2["本地 Flask 代理 App"];
         A2 -- 2. 指示 Gemini 使用工具 --> B1{Gemini API / Tool Call};
         B1 -- 5. 將 HTML 結果返回 --> A2;
         A2 -- 6. 重寫 HTML 後呈現給 --> A1;
     end
 
     subgraph "B) 遠端執行器 (Cloud Server)"
-        B1 -- 3. 觸發遠端工具 --> C1[GTunnel 遠端執行器 (Cloud Run)];
-        C1 -- 4. 擷取目標網站 HTML --> D1[目標網站];
+        B1 -- 3. 觸發遠端工具 --> C1["GTunnel 遠端執行器 (Cloud Run)"];
+        C1 -- 4. 擷取目標網站 HTML --> D1["目標網站"];
     end
 
     style A2 fill:#9cf,stroke:#333,stroke-width:2px

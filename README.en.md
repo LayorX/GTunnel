@@ -1,5 +1,7 @@
 # GTunnel - An Information Tunnel Born from the Cracks in a Digital Walled Garden
 
+[中文版](README.md)
+
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](CONTRIBUTING.en.md)
 
@@ -31,15 +33,15 @@ GTunnel operates completely differently from a traditional proxy:
 ```mermaid
 graph TD
     subgraph "A) User's Machine"
-        A1[User's Browser] -- 1. Enter URL --> A2[Local Flask Proxy App];
+        A1["User's Browser"] -- 1. Enter URL --> A2["Local Flask Proxy App"];
         A2 -- 2. Instruct Gemini to use tool --> B1{Gemini API / Tool Call};
         B1 -- 5. Return HTML result --> A2;
         A2 -- 6. Serve rewritten HTML to --> A1;
     end
 
     subgraph "B) Remote Executor (Cloud Server)"
-        B1 -- 3. Trigger remote tool --> C1[GTunnel Remote Executor (Cloud Run)];
-        C1 -- 4. Fetch target site HTML --> D1[Target Website];
+        B1 -- 3. Trigger remote tool --> C1["GTunnel Remote Executor (Cloud Run)"];
+        C1 -- 4. Fetch target site HTML --> D1["Target Website"];
     end
 
     style A2 fill:#9cf,stroke:#333,stroke-width:2px
